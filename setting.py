@@ -1,5 +1,5 @@
 # coding=utf-8
-# 开发人员  ：  熊超
+# 开发人员  ：  will
 # 开发时间  ：  2023/12/28  15:26
 # 文件名称  :  setting.PY
 # 开发工具  :  PyCharm
