@@ -37,14 +37,14 @@ def login_twitter(index):
     time.sleep(3)
     # 输入邮箱并点击下一步
     input_box = br.find_element(By.XPATH, "//input")
-    input_box.send_keys("13272050242@163.com")
+    input_box.send_keys("*******@163.com")
     button = br.find_element(By.XPATH,
                              '/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/button[2]/div')
     action_chains.ActionChains(br).move_to_element(button).click().perform()
 
     time.sleep(1)
     input_box = br.find_element(By.XPATH, '//input[@name="password"]')
-    input_box.send_keys("xc.201418")
+    input_box.send_keys("********")
     button = br.find_element(By.XPATH,
                              '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/button/div')
     action_chains.ActionChains(br).move_to_element(button).click().perform()
@@ -400,25 +400,25 @@ if __name__ == '__main__':
         keywords.append(politics_keyword)
 
     # 经济
-    economics = "GDP、inflation、jobless rate、trade、stock market、financial market、exchange rate、International Investment、E-commerce、financial crisis、Recession、Economic recovery、Emerging markets、social welfare、Retail sales、investment、currency、tariff、Government spending、financial statement"
+    economics = "GDP、inflation"
     economics_keywords = economics.split("、")
     for economics_keyword in economics_keywords:
         keywords.append(economics_keyword)
 
     # 社会
-    social = "football、NBA、world cup、olympic games、Anti-Doping、swim、Esports、Golf、sports legend、Transfer News、Game Events、housing、car、traffic、educate、Outfits、cosmetics、travel、train、lifestyle"
+    social = "football、NBA、world cup"
     social_keywords = social.split("、")
     for social_keyword in social_keywords:
         keywords.append(social_keyword)
 
     # 科技
-    technology = "Google、Apple、Microsoft、Amazon、Facebook、Tencent、AI、deep learning、Chatgpt、blockchain、biotechnology、Home Automation、virtual reality、autopilot、Activate conference、scientific and technical corporation、EV technology、renewable energy、wearable devices、scientific and technological innovation"
+    technology = "Google、Apple、Microsoft"
     technology_keywords = technology.split("、")
     for technology_keyword in technology_keywords:
         keywords.append(technology_keyword)
 
     # 文化
-    culture = "Chinese traditional culture、Chinese characters、calligraphy、Spring Festival、Mid-Autumn Festival、Peking Opera、pottery、tea culture、embroidery、cheongsam、Hollywood、Chinese history、cooking culture、Taoism、Confucianism、garden art、ancient architecture、drama、Shakespeare、museum"
+    culture = "Chinese traditional culture、Chinese characters"
     culture_keywords = culture.split("、")
     for culture_keyword in culture_keywords:
         keywords.append(culture_keyword)
